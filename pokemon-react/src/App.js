@@ -27,7 +27,12 @@ export default function Pokemon() {
           <img src={pokemon.frontImage} alt={pokemon.name} />
           <img src={pokemon.backImage} alt={pokemon.name} />
           <h2>{pokemon.name}</h2>
-          
+          <p>HP: {pokemon.hp}</p>
+          <p>Attack: {pokemon.attack}</p>
+          <p>Defense: {pokemon.defense}</p>
+          <p>Special-Attack: {pokemon.specialAttack}</p>
+          <p>Special-Defense: {pokemon.specialDefense}</p>
+          <p>Speed: {pokemon.speed}</p>
         </li>
       ))}
     </div>
