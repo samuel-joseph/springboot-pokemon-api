@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.springboot.pokemon.api.model.Pokemon;
 import com.example.springboot.pokemon.api.service.PokemonService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/api/pokemon")
+@CrossOrigin(origins = "http://localhost:3000")
 public class PokemonController {
 
   @Autowired
