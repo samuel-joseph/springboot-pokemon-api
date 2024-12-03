@@ -39,7 +39,6 @@ public class PokemonService {
       // Fetch Pokemon data from the API
       PokemonResponse response = restTemplate.getForObject(url, PokemonResponse.class);
 
-      System.out.println("The response: " + response.getSprites().getBack_default());
       if (response != null) {
         Pokemon pokemon = new Pokemon();
 
@@ -48,6 +47,11 @@ public class PokemonService {
         pokemon.setName(response.getName());
         pokemon.setFrontImage(response.getSprites().getFront_default());
         pokemon.setBackImage(response.getSprites().getBack_default());
+        pokemon.setGifBackImage(
+            response.getSprites().getVersions().getGenerationV().getBlackWhite().getAnimated().getBack_default());
+
+        pokemon.setGifFrontImage(
+            response.getSprites().getVersions().getGenerationV().getBlackWhite().getAnimated().getFront_default());
 
         // Map stats
         pokemon.setHp(response.getStats().get(0).getBase_stat());

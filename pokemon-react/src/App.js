@@ -26,6 +26,8 @@ export default function Pokemon() {
         <li key={pokemon.id}>
           <img src={pokemon.frontImage} alt={pokemon.name} />
           <img src={pokemon.backImage} alt={pokemon.name} />
+          <img src={pokemon.gifFrontImage} alt={pokemon.name} />
+          <img src={pokemon.gifBackImage} alt={pokemon.name} />
           <h2>{pokemon.name}</h2>
           <p>HP: {pokemon.hp}</p>
           <p>Attack: {pokemon.attack}</p>

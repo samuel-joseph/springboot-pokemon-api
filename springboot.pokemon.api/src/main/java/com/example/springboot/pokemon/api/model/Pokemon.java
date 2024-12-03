@@ -21,6 +21,8 @@ public class Pokemon {
   private String frontImage;
   private String backImage;
   private String type;
+  private String gifFrontImage;
+  private String gifBackImage;
 
   // @OneToMany
   // private List<Moveset> moves;
@@ -114,11 +116,19 @@ public class Pokemon {
     this.type = type;
   }
 
-  // public List<Moveset> getMoves() {
-  // return moves;
-  // }
+  public String getGifFrontImage() {
+    return gifFrontImage;
+  }
 
-  // public void setMoves(List<Moveset> moves) {
-  // this.moves = moves;
-  // }
+  public void setGifFrontImage(String gifFrontImage) {
+    this.gifFrontImage = gifFrontImage;
+  }
+
+  public String getGifBackImage() {
+    return gifBackImage;
+  }
+
+  public void setGifBackImage(String gifBackImage) {
+    this.gifBackImage = gifBackImage;
+  }
 }
