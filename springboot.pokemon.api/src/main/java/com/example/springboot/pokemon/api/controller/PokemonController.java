@@ -27,9 +27,15 @@ public class PokemonController {
   // @Autowired
   // private MoveRepository moveRepository;
 
+  // @GetMapping
+  // public List<Pokemon> getAllPokemons() {
+  // return pokemonService.getAllPokemons();
+  // }
+
+  // to be continued
   @GetMapping
   public List<Pokemon> getAllPokemons() {
-    return pokemonService.getAllPokemons();
+    return pokemonService.fetchPokemons();
   }
 
   @GetMapping("/{id}")

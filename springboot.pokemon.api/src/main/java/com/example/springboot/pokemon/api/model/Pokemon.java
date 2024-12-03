@@ -102,7 +102,7 @@ public class Pokemon {
     return backImage;
   }
 
-  public void setbackImage(String backImage) {
+  public void setBackImage(String backImage) {
     this.backImage = backImage;
   }
 
